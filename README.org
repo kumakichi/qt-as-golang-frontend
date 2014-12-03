@@ -2,7 +2,7 @@
   
   use QT as Golang program frontend, QT only draws UI, data is processed by backend program powered by Golang
 
-  [[https://raw.github.com/kumakichi/qt-as-golang-frontend/master/Screenshot.png][Screenshot]]
+  [[https://geekpics.net/images/2014/12/03/ULbhOC.png]]
 
 * Software Requirements
 
