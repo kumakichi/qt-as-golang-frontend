@@ -1,0 +1,54 @@
+* Introduction
+  
+  use QT as Golang program frontend, QT only draws UI, data is processed by backend program powered by Golang
+
+* Software Requirement
+
+  Here is a list of the softwares we use in this demo:
+
++ Lua 5.2.3
++ QT 5.3.2
++ Go 1.3.3
+
+  This demo is tested under ubuntu12.04 i386 and Windows XP SP3
+
+* How to build
+
+** linux
+
+#+BEGIN_SRC sh
+  cd /path/to/this/demo
+  go build *.go                   # build Golang backend program 
+  qmake && make                   # build QT frontend program
+  ./ipc_demo                      # run
+#+END_SRC
+
+** windows
+
+*** build frontend
+
+    you'd better build this demo in QtCreator if you use Windows operation system
+
+    QtCreator will generate *ipc_demo.exe*
+
+*** build backend
+
+#+BEGIN_SRC sh
+  # open a cmd shell
+  cd /the/path/to/this/demo
+  go build backend.go  protocol.go # will generate *backend.exe*
+#+END_SRC
+
+*** put all together
+
+    Here is the files list:
++ ipc_demo.exe
++ backend.exe
++ cryingJingChou.png
++ config.lua
++ lua52.dll
+
+    lua52.dll is in subdirectory named *lua-5.2.3*
+
+
+
